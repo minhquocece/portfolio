@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 4 Website Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,900&display=swap" rel="stylesheet">
+  <style>
+  body {
+	font-family: 'Montserrat', sans-serif;
+  }
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+	#container {
+	  perspective: 40px;
+	  z-index: 1;
+	}
+
+	#inner {
+	  transition: transform 0.5s;
+	  height: 80vh; 
+	  background: url(./img/gridme.png);
+	  width: 100%;
+	  margin:0 auto;
+	}  
+	#inner:after {
+		position: absolute;
+	    content: '';
+	    display: block;
+	    height: 100%;
+	    width: 100%;
+	    background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.17) 12%, rgba(255, 255, 255, 0.99) 68%, white 69%, white 80%);
+	    background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.17) 12%, rgba(255, 255, 255, 0.99) 68%, white 69%, white 80%); 
+	    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.17) 12%, rgba(255, 255, 255, 0.99) 68%, white 69%, white 80%); 
+	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 );		
+	}
+	.letter {
+		line-height: 60px;
+		font-size: 70px;
+		margin: 0 4px;		
+	}
+	#aboutme1:before {
+		position: absolute;
+	    content: '';
+	    display: block;
+	    height: 100%;
+	    width: 100%;
+	    background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.17) 12%, rgba(255, 255, 255, 0.99) 68%, white 69%, white 80%);
+	     background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.17) 12%, rgba(255, 255, 255, 0.99) 68%, white 69%, white 80%); 
+	    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.17) 12%, rgba(255, 255, 255, 0.99) 68%, white 69%, white 80%); 
+	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 );		
+	}
+	.trail { /* className for the trail elements */
+	    position: absolute;
+	    height: 60px; 
+	    width: 60px;
+	    background: url(./img/gridme2.png);
+    }	
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: transparent;position: relative;z-index: 2">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
+    <div class="navbar-nav ">
+      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#">Features</a>
+      <a class="nav-item nav-link" href="#">Pricing</a>
+      <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    </div>
+  </div>
+</nav>
+
+<div  class="container-fluid px-0" style="margin-top:20px;">
+	<div id="container" class="overflow-hidden">
+		<div>
+		  	<div id="inner">
+		  		<div style="position: absolute;top:calc(50% - 200px);left: 90px;z-index:1;">
+		  			<div style="font-size: 70px;font-weight: bold;">Tuan NA.</div>
+		  			<div style="font-weight: bold;color: #656565;">UX/UI Designer</div>
+		  			<div style="margin-top: 20px;"><button type="button" class="btn btn-primary">Contact now</button></div>
+		  		</div>
+			</div>
+		</div>
+	</div>
+	<div  style="height: 50vh;width: 100%;position: relative;background: url(./img/gridme2.png);background-color: #000;" class="">
+		<div id="aboutme" style="position: absolute;color: #ffffff;width: 510px;height: 300px;top: 30%;left: 20px;">
+			<div style="margin-top: 60px;margin-left: 120px;">
+				<span class="letter">A</span>
+				<span class="letter">B</span>
+				<span class="letter">O</span>
+				<span class="letter">U</span>
+				<span class="letter">T</span>
+			</div>
+			<div style="margin-top: 60px; margin-left: 114px;">
+				<span class="letter">M</span>
+				<span class="letter">E</span>	
+			</div>		
+		</div>
+		<div id="coverLayout" class="radial-gradient" style="position: absolute;width: 100%;height: 100%;background-color: #000;">
+	</div>
+</div>
+
+<script type="text/javascript">
+(function() {
+  // Init
+  var container = document.getElementById("container"),
+      inner = document.getElementById("inner");
+
+  // Mouse
+  var mouse = {
+    _x: 0,
+    _y: 0,
+    x: 0,
+    y: 0,
+    updatePosition: function(event) {
+      var e = event || window.event;
+      this.x = e.clientX - this._x;
+      this.y = (e.clientY - this._y) * -1;
+    },
+    setOrigin: function(e) {
+      this._x = e.offsetLeft + Math.floor(e.offsetWidth / 2);
+      this._y = e.offsetTop + Math.floor(e.offsetHeight / 2);
+    },
+    show: function() {
+      return "(" + this.x + ", " + this.y + ")";
+    }
+  };
+
+  // Track the mouse position relative to the center of the container.
+  mouse.setOrigin(container);
+
+  //----------------------------------------------------
+
+  var counter = 0;
+  var refreshRate = 10;
+  var isTimeToUpdate = function() {
+    return counter++ % refreshRate === 0;
+  };
+
+  //----------------------------------------------------
+
+  var onMouseEnterHandler = function(event) {
+    update(event);
+  };
+
+  var onMouseLeaveHandler = function() {
+    inner.style = "";
+  };
+
+  var onMouseMoveHandler = function(event) {
+    if (isTimeToUpdate()) {
+      update(event);
+    }
+  };
+
+  //----------------------------------------------------
+
+  var update = function(event) {
+    mouse.updatePosition(event);
+    updateTransformStyle(
+      (mouse.y / inner.offsetHeight / 2).toFixed(2),
+      (mouse.x / inner.offsetWidth / 2).toFixed(2)
+    );
+  };
+
+  var updateTransformStyle = function(x, y) {
+    var style = "rotateX(" + x + "deg) rotateY(" + y + "deg)";
+    inner.style.transform = style;
+    inner.style.webkitTransform = style;
+    inner.style.mozTranform = style;
+    inner.style.msTransform = style;
+    inner.style.oTransform = style;
+  };
+
+  //--------------------------------------------------------
+
+  container.onmousemove = onMouseMoveHandler;
+  container.onmouseleave = onMouseLeaveHandler;
+  container.onmouseenter = onMouseEnterHandler;
+})();	
+
+jQuery(function($) {
+    var mouseXpercentage, mouseYpercentage;
+    $("#coverLayout").mousemove(function(event) {
+        var offset = $(this).offset();
+        mouseXpercentage = event.pageX - offset.left;
+        mouseYpercentage = event.pageY - offset.top;
+        $('#coverLayout').css('background', 'radial-gradient(circle at ' + mouseXpercentage + 'px ' + mouseYpercentage + 'px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.17) 6%, rgba(0, 0, 0, 1) 2%, black 100%, black 100%)');
+    });
+});
+
+
+/*// dots is an array of Dot objects,
+// mouse is an object used to track the X and Y position
+   // of the mouse, set with a mousemove event listener below
+var dots = [],
+    mouse = {
+      x: 0,
+      y: 0
+    };
+
+// The Dot object used to scaffold the dots
+var Dot = function() {
+  this.x = 0;
+  this.y = 0;
+  this.node = (function(){
+    var n = document.createElement("div");
+    n.className = "trail";
+    document.body.appendChild(n);
+    return n;
+  }());
+};
+// The Dot.prototype.draw() method sets the position of 
+  // the object's <div> node
+Dot.prototype.draw = function() {
+  this.node.style.left = this.x + "px";
+  this.node.style.top = this.y + "px";
+};
+
+// Creates the Dot objects, populates the dots array
+for (var i = 0; i < 12; i++) {
+  var d = new Dot();
+  dots.push(d);
+}
+
+// This is the screen redraw function
+function draw() {
+  // Make sure the mouse position is set everytime
+    // draw() is called.
+  var x = mouse.x,
+      y = mouse.y;
+  
+  // This loop is where all the 90s magic happens
+  dots.forEach(function(dot, index, dots) {
+    var nextDot = dots[index + 1] || dots[0];
+    
+    dot.x = x;
+    dot.y = y;
+    dot.draw();
+    x += (nextDot.x - dot.x) * .6;
+    y += (nextDot.y - dot.y) * .6;
+
+  });
+}
+
+addEventListener("mousemove", function(event) {
+  //event.preventDefault();
+  mouse.x = event.pageX;
+  mouse.y = event.pageY;
+});
+
+// animate() calls draw() then recursively calls itself
+  // everytime the screen repaints via requestAnimationFrame().
+function animate() {
+  draw();
+  requestAnimationFrame(animate);
+}
+
+// And get it started by calling animate().
+animate();*/
+
+</script>
+<!-- <div class="jumbotron text-center" style="margin-bottom:0">
+  <p>Footer</p>
+</div> -->
+
+</body>
+</html>
