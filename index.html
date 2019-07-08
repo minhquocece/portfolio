@@ -40,22 +40,12 @@
 	    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.17) 12%, rgba(255, 255, 255, 0.99) 68%, white 69%, white 80%); 
 	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 );		
 	}
-	.letter {
-		line-height: 60px;
-		font-size: 70px;
-		margin: 0 4px;		
+	.letter {	
+
 	}
-	#aboutme1:before {
-		position: absolute;
-	    content: '';
-	    display: block;
-	    height: 100%;
-	    width: 100%;
-	    background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.17) 12%, rgba(255, 255, 255, 0.99) 68%, white 69%, white 80%);
-	     background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.17) 12%, rgba(255, 255, 255, 0.99) 68%, white 69%, white 80%); 
-	    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.17) 12%, rgba(255, 255, 255, 0.99) 68%, white 69%, white 80%); 
-	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 );		
-	}
+  .color-white {
+    color: #FFFFFF;
+  }
 	.trail { /* className for the trail elements */
 	    position: absolute;
 	    height: 60px; 
@@ -65,12 +55,12 @@
   </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: transparent;position: relative;z-index: 2">
-  <a class="navbar-brand" href="#">Navbar</a>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: transparent;position: relative;z-index: 2;height: 10vh;">
+  <a class="navbar-brand" href="#" style="background: url(./img/favicon.png);width: 83px;height: 37px;"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
+  <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup" style="color: #222222;">
     <div class="navbar-nav ">
       <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
       <a class="nav-item nav-link" href="#">Features</a>
@@ -81,32 +71,37 @@
 </nav>
 
 <div  class="container-fluid px-0" style="margin-top:20px;">
-	<div id="container" class="overflow-hidden">
-		<div>
-		  	<div id="inner">
-		  		<div style="position: absolute;top:calc(50% - 200px);left: 90px;z-index:1;">
-		  			<div style="font-size: 70px;font-weight: bold;">Tuan NA.</div>
-		  			<div style="font-weight: bold;color: #656565;">UX/UI Designer</div>
-		  			<div style="margin-top: 20px;"><button type="button" class="btn btn-primary">Contact now</button></div>
-		  		</div>
-			</div>
+	<div id="container" class="overflow-hidden; border-color: transparent;">
+		  	<div id="inner" style="transform: rotateX() rotateY();">
+		  		<div style="position: absolute;top:calc(50% - 200px);left: 10%;z-index:1;">
+		  			<div style="font-size: 5.56vw;font-weight: 900;">Tuan NA.</div>
+		  			<div style="font-size: 1.67vw;font-weight: bold;color: #6D7278;opacity: 0.53;">UX/UI Designer</div>
+		  			<div style="margin-top: 42px;"><button type="button" class="btn btn-primary btn-lg">Contact now</button></div>
+		  	</div>
 		</div>
 	</div>
-	<div  style="height: 50vh;width: 100%;position: relative;background: url(./img/gridme2.png);background-color: #000;" class="">
-		<div id="aboutme" style="position: absolute;color: #ffffff;width: 510px;height: 300px;top: 30%;left: 20px;">
-			<div style="margin-top: 60px;margin-left: 120px;">
-				<span class="letter">A</span>
-				<span class="letter">B</span>
-				<span class="letter">O</span>
-				<span class="letter">U</span>
-				<span class="letter">T</span>
-			</div>
-			<div style="margin-top: 60px; margin-left: 114px;">
-				<span class="letter">M</span>
-				<span class="letter">E</span>	
-			</div>		
-		</div>
+	<div  style="height: 80vh;width: 100%;position: relative;background: url(./img/gridme2.png);background-color: #000;" class="">
 		<div id="coverLayout" class="radial-gradient" style="position: absolute;width: 100%;height: 100%;background-color: #000;">
+      <div id="aboutme" style="position: absolute;top:30%;left: 10%;z-index:1;display: flex;width: 80%;">
+        <div style="color: #FFFFFF;font-size: 4.45vw; line-height: 5.56vw;font-weight: 600;">
+          <p>
+            <span class="letter">A</span>
+            <span class="letter">B</span>
+            <span class="letter">O</span>
+            <span class="letter">U</span>
+            <span class="letter">T</span>
+          </p>
+          <p style="margin-top: 60px;">
+            <span class="letter">M</span>
+            <span class="letter">E</span> 
+          </p>  
+        </div>
+        <div style="margin-left: 20%;width: 50%;font-weight: 600;line-height: 40px;font-size: 1.24vw;color: #969CA2;">
+            <p>In <span class="color-white">6 years</span> working UX/UI design, I spent <span class="color-white">4 years</span> working in freelance world.</p>
+
+            <p style="margin-top: 60px;">Next <span class="color-white">2 years</span>, I spent my work time in IT company for learning more about how to produce a product, learning how to work in a scrum team, what thing need to have in a design sprint.</p>                   
+        </div>  
+      </div>      
 	</div>
 </div>
 
@@ -195,7 +190,7 @@ jQuery(function($) {
         var offset = $(this).offset();
         mouseXpercentage = event.pageX - offset.left;
         mouseYpercentage = event.pageY - offset.top;
-        $('#coverLayout').css('background', 'radial-gradient(circle at ' + mouseXpercentage + 'px ' + mouseYpercentage + 'px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.17) 6%, rgba(0, 0, 0, 1) 2%, black 100%, black 100%)');
+        $('#coverLayout').css('background', 'radial-gradient(circle at ' + mouseXpercentage + 'px ' + mouseYpercentage + 'px, #4646469e 1%, rgba(65, 65, 65, 0.51) 5%, black, 10%, black 24%, black 30%, black 30%)');
     });
 });
 
